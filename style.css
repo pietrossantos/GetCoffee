@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 13vh;
+  border-bottom: solid 1px rgb(163, 160, 160);
+}
+figure {
+  width: 18vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+h2 {
+  font-size: 26px;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 22px;
+  width: 28vw;
+}
+li:hover {
+  cursor: pointer;
+  transform: scale(115%);
+}
+section {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+  height: 50vh;
+  flex-direction: column;
+}
+
+.texto {
+  width: 38vw;
+  font-size: 28px;
+  font-weight: 700;
+}
+button {
+  width: 16vw;
+  height: 5vh;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  background-color: #fca60f;
+}
+button:hover {
+  cursor: pointer;
+  transform: scale(115%);
+}
+.logos {
+  margin-right: 15px;
+  width: 14vw;
+}
+.logosCoffee:hover {
+  cursor: pointer;
+}
+.copoDoGet {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 50vh;
+  width: 30vw;
+}
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 72vh;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+
+/* 
+media queries
+
+@media -> ele é uma regra de estilo do CSS, que atraves
+dessa regra de estilo, conseguimos determinar um estilo
+para diversos tipos de dispositivos (smart tvs, celulares, tablets, ipads, smartwatches...)
+
+sintaxe (forma de escrita)
+
+@media screen and (max-width:500px){
+    max-width -> aplique esse estilo
+    em uma tela com largura menor que 500px
+}
+@media screen and (min-width:1300px){
+    min-width -> aplique esse estilo em
+    uma tela com largura maior que 1300px
+}
+
+*/
+@media screen and (max-width: 500px) {
+  body {
+    background-color: tomato;
+  }
+}
